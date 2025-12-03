@@ -25,7 +25,7 @@ export default function ComingSoonPage() {
         custom={0.05}
       >
         <div className="relative flex items-center justify-center">
-          <div className="absolute -inset-10 rounded-full bg-accent/10 blur-[120px] opacity-70"></div>
+          <div className="absolute -inset-10 rounded-full bg-accent/10 blur-[120px] opacity-70" />
 
           <div className="rounded-3xl bg-bgCard p-5 shadow-[0_0_50px_rgba(56,189,248,0.45)]">
             <img
@@ -77,7 +77,7 @@ export default function ComingSoonPage() {
         systems.
       </m.p>
 
-      {/* Contact Button */}
+      {/* Contact */}
       <m.div
         className="mt-10 flex flex-col sm:flex-row items-center gap-4"
         initial="hidden"
@@ -123,4 +123,8 @@ Regards,`
         variants={fadeUp}
         custom={0.45}
       >
-        © {new Date(
+        © {new Date().getFullYear()} JavaAI Labs. Built for Java enterprises.
+      </m.div>
+    </div>
+  );
+}
