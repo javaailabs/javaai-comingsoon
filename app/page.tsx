@@ -41,7 +41,7 @@ export default function ComingSoonPage() {
         </div>
 
         <div className="mt-3 text-lg sm:text-xl font-medium text-textMuted/90">
-          Modern AI for Enterprise Java & Spring Boot Systems
+          Modern AI for Enterprise Java & Spring Boot Systems.
         </div>
 
         {/* Coming Soon */}
