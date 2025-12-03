@@ -1,6 +1,6 @@
 "use client";
 
-import { m, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -17,7 +17,7 @@ export default function ComingSoonPage() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-transparent to-indigo-700/20 blur-3xl" />
 
       {/* Logo + Title */}
-      <m.div
+      <motion.div
         className="flex flex-col items-center justify-center"
         initial="hidden"
         animate="visible"
@@ -45,7 +45,7 @@ export default function ComingSoonPage() {
         </div>
 
         {/* Coming Soon */}
-        <m.div
+        <motion.div
           className="mt-8 flex flex-col items-center"
           initial="hidden"
           animate="visible"
@@ -61,11 +61,11 @@ export default function ComingSoonPage() {
           <div className="mt-3 text-sm sm:text-base text-textMuted/80 tracking-wide">
             Launching Q1 2026
           </div>
-        </m.div>
-      </m.div>
+        </motion.div>
+      </motion.div>
 
       {/* Description */}
-      <m.p
+      <motion.p
         className="mt-4 max-w-xl text-sm sm:text-base text-textMuted leading-relaxed"
         initial="hidden"
         animate="visible"
@@ -75,10 +75,10 @@ export default function ComingSoonPage() {
         Our full website is launching soon. We're onboarding early enterprise
         partners exploring how to bring modern AI into their Java & Spring Boot
         systems.
-      </m.p>
+      </motion.p>
 
       {/* Contact */}
-      <m.div
+      <motion.div
         className="mt-10 flex flex-col sm:flex-row items-center gap-4"
         initial="hidden"
         animate="visible"
@@ -113,10 +113,10 @@ Regards,`
             Direct email to the founders — no forms, no bots.
           </p>
         </div>
-      </m.div>
+      </motion.div>
 
       {/* Footer */}
-      <m.div
+      <motion.div
         className="mt-12 text-xs text-textMuted"
         initial="hidden"
         animate="visible"
@@ -124,7 +124,7 @@ Regards,`
         custom={0.45}
       >
         © {new Date().getFullYear()} JavaAI Labs. Built for Java enterprises.
-      </m.div>
+      </motion.div>
     </div>
   );
 }
