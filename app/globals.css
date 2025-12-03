@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bgDark: #020617;
+  --color-bgCard: #020819;
+  --color-accent: #38bdf8;
+  --color-accentSoft: #0ea5e9;
+  --color-textMain: #e5e7eb;
+  --color-textMuted: #9ca3af;
+  --color-borderSoft: #1f2933;
+  --shadow-glow: 0 0 60px rgba(56, 189, 248, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bgDark);
+  color: var(--color-textMain);
+}
