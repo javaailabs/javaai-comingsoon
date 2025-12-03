@@ -2,14 +2,15 @@
 
 import { motion, Variants } from "framer-motion";
 
-const fadeUp : Variants = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
-  visible: (delay: number = 0) => ({
+  visible: (custom: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay, ease: "easeOut" },
+    transition: { duration: 0.6, delay: custom, ease: "easeOut" },
   }),
 };
+
 
 export default function ComingSoonPage() {
   return (
