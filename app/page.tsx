@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { m, Variants } from "framer-motion";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -14,11 +14,12 @@ const fadeUp: Variants = {
 export default function ComingSoonPage() {
   return (
     <div className="relative flex flex-col items-center justify-center text-center min-h-[80vh] px-6">
+      
       {/* Background glow */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-transparent to-indigo-700/20 blur-3xl" />
 
       {/* Logo + Title */}
-      <motion.div
+      <m.div
         className="flex flex-col items-center justify-center"
         initial="hidden"
         animate="visible"
@@ -46,7 +47,7 @@ export default function ComingSoonPage() {
         </div>
 
         {/* Coming Soon */}
-        <motion.div
+        <m.div
           className="mt-8 flex flex-col items-center"
           initial="hidden"
           animate="visible"
@@ -62,23 +63,22 @@ export default function ComingSoonPage() {
           <div className="mt-3 text-sm sm:text-base text-textMuted/80 tracking-wide">
             Launching Q1 2026
           </div>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
 
       {/* Description */}
-      <motion.p
+      <m.p
         className="mt-4 max-w-xl text-sm sm:text-base text-textMuted leading-relaxed"
         initial="hidden"
         animate="visible"
         variants={fadeUp}
         custom={0.22}
       >
-        Our full website is launching soon. We're onboarding early enterprise partners
-        exploring how to bring modern AI into their Java & Spring Boot systems.
-      </motion.p>
+        Our full website is launching soon. We're onboarding early enterprise partners exploring how to bring modern AI into their Java & Spring Boot systems.
+      </m.p>
 
       {/* Contact Button */}
-      <motion.div
+      <m.div
         className="mt-10 flex flex-col sm:flex-row items-center gap-4"
         initial="hidden"
         animate="visible"
@@ -113,10 +113,10 @@ Regards,`
             Direct email to the founders — no forms, no bots.
           </p>
         </div>
-      </motion.div>
+      </m.div>
 
       {/* Footer */}
-      <motion.div
+      <m.div
         className="mt-12 text-xs text-textMuted"
         initial="hidden"
         animate="visible"
@@ -124,7 +124,7 @@ Regards,`
         custom={0.45}
       >
         © {new Date().getFullYear()} JavaAI Labs. Built for Java enterprises.
-      </motion.div>
+      </m.div>
     </div>
   );
 }
