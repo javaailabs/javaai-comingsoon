@@ -14,8 +14,6 @@ const fadeUp: Variants = {
 export default function ComingSoonPage() {
   return (
     <div className="relative flex flex-col items-center justify-center text-center min-h-[80vh] px-6">
-      
-      {/* Background glow */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-transparent to-indigo-700/20 blur-3xl" />
 
       {/* Logo + Title */}
@@ -74,7 +72,9 @@ export default function ComingSoonPage() {
         variants={fadeUp}
         custom={0.22}
       >
-        Our full website is launching soon. We're onboarding early enterprise partners exploring how to bring modern AI into their Java & Spring Boot systems.
+        Our full website is launching soon. We're onboarding early enterprise
+        partners exploring how to bring modern AI into their Java & Spring Boot
+        systems.
       </m.p>
 
       {/* Contact Button */}
@@ -123,8 +123,4 @@ Regards,`
         variants={fadeUp}
         custom={0.45}
       >
-        © {new Date().getFullYear()} JavaAI Labs. Built for Java enterprises.
-      </m.div>
-    </div>
-  );
-}
+        © {new Date(
